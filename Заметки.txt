@@ -1,0 +1,14 @@
+pip3 install -r requirements.txt
+
+.venv/pip.ini - загрузка из корпоративного нексуса
+[global]
+index-url = https://nexus...
+
+Работа с сертификатами
+pip install certifi -U.
+Run this command to force a Windows certificate update:
+
+certutil -generateSSTFromWU roots.sst
+certutil -addstore -f root roots.sst
+
+в request добавить ", verify=False", если нет возможности обойти проблему с сертификатами из корп.сети
