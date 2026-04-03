@@ -1,5 +1,3 @@
-# import requests
-#
-# response = requests.get("https://playground.learnqa.ru/api/hello", verify=False)
-# print(response.text)
-print("Hello from Tatyana Fedotova")
+import requests
+response = requests.get("https://playground.learnqa.ru/api/get_text", verify=False)
+print(response.text)
